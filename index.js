@@ -20,11 +20,11 @@ fetchDta();
 
 const express = require('express');
 const app = express();
-const port = 3099;
+const port = 3055;
 
 app.get('/', (req, res) => {
 	fetchDta();
 	res.send(arr);
 });
 
-app.listen(process.env.PORT || 3099, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT || 3055, () => console.log(`Example app listening on port ${port}!`));
